@@ -15,12 +15,12 @@ export default function MenuDrawer({ isOpen, navList, setIsOpen }: Props) {
   return (
     <div
       className={clsx(
-        "transition relative z-50 sm:hidden bg-[#1a1c20]",
+        "transition relative sm:hidden bg-[#1a1c20]",
         { "opacity-0 -translate-y-2": !isOpen },
         { "opacity-100 translate-y-0": isOpen }
       )}
     >
-      <ul className="container space-y-2 pb-4 text-[16px]">
+      <ul className="container space-y-3 pb-4 text-lg">
         {navList.map(({ link, label }) => (
           <li
             key={label}
