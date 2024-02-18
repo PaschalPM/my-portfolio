@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <section className="w-full h-screen block md:flex justify-between container lg:px-28 pt-44 sm:pt-36 fadeIn">
       <div className="w-full md:max-w-[600px]">
-        <HomeBody/>
+        <HomeBody />
       </div>
       <div className="max-w-[450px] hidden md:block ">
         <Image
