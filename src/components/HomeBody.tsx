@@ -25,7 +25,7 @@ export default function HomeBody() {
   return (
     <>
       <Typography variant="h3" className="mb-1 slideInBottom">
-        Hello, It's Me
+        Hello, It&apos;s Me
       </Typography>
       <Typography
         variant="h1"
@@ -34,7 +34,7 @@ export default function HomeBody() {
         Paschal Okafor
       </Typography>
       <Typography variant="h3" className="mb-4">
-        And I'm a <span className="text-gold font-mono"> {typeEffect}<Cursor cursorColor='white' /> </span>
+        And I&apos;m a <span className="text-gold font-mono"> {typeEffect}<Cursor cursorColor='white' /> </span>
       </Typography>
       <p className="mb-4">
         Experienced full stack developer proficient in Laravel, React.js,
