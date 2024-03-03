@@ -1,6 +1,6 @@
 import Typography from "./Typography";
 import Link from "next/link";
-import ConnectBtn from "@/components/ConnectBtn";
+import AppButton from "@/components/AppButton";
 
 export default function AboutBody() {
  
@@ -14,8 +14,8 @@ export default function AboutBody() {
           <Typography>Welcome to my portfolio!</Typography>
           <br />
           <Typography>
-            I'm Paschal O. Okafor, a full-stack developer skilled in Laravel, Django,
-            Next.js, Vue.js,TypeScript, PHP, Python, Firebase, and more. Currently, I'm an IT
+            I'm Paschal Okafor, a full-stack developer skilled in Laravel, Django,
+            Next.js, Vue.js,TypeScript, TailwindCSS, PHP, Python, Firebase, and more. Currently, I'm an IT
             administrator/web developer at Troloppe Property Services, where
             I've led the development of web applications like
             <Link href="https://troloppe.com" className="text-blue-300">
@@ -39,7 +39,7 @@ export default function AboutBody() {
           <Typography>
             Let's connect and explore opportunities together!
           </Typography>
-          <ConnectBtn/>
+          <AppButton connectWithMe/>
         </div>
     </>
   );

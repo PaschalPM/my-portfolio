@@ -4,8 +4,8 @@ import Typography from "./Typography";
 import SocialLink from "./SocialLink";
 import { FaFacebookF } from "react-icons/fa6";
 import { FiGithub, FiLinkedin } from "react-icons/fi";
-import DownloadBtn from "./DownloadBtn";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import AppButton from "./AppButton";
 
 export default function HomeBody() {
   const [typeEffect] = useTypewriter({
@@ -55,11 +55,7 @@ export default function HomeBody() {
           socialIcon={<FiLinkedin />}
         />
       </div>
-
-      <DownloadBtn
-        href="/pdfs/Paschal-Okafor-CV-FullStackWebDeveloper.pdf"
-        text="Download CV"
-      />
+      <AppButton downloadCv/>
     </>
   );
 }
