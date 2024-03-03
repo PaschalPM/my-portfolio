@@ -1,11 +1,10 @@
 "use client";
 import React from "react";
 import Typography from "./Typography";
-import SocialLink from "./SocialLink";
-import { FaFacebookF } from "react-icons/fa6";
-import { FiGithub, FiLinkedin } from "react-icons/fi";
+
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import AppButton from "./AppButton";
+import SocialLinkBar from "./SocialLinkBar";
 
 export default function HomeBody() {
   const [typeEffect] = useTypewriter({
@@ -41,20 +40,7 @@ export default function HomeBody() {
         Node.js, and more, dedicated to delivering seamless user experiences and
         scalable solutions.
       </p>
-      <div className="mb-4">
-        <SocialLink
-          href="https://www.facebook.com/paschal.okafor3?sfnsn=scwspwa&mibextid=RUbZ1f"
-          socialIcon={<FaFacebookF />}
-        />
-        <SocialLink
-          href="https://github.com/PaschalPM"
-          socialIcon={<FiGithub />}
-        />
-        <SocialLink
-          href="https://www.linkedin.com/in/paschal-okafor-24877917a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-          socialIcon={<FiLinkedin />}
-        />
-      </div>
+      <SocialLinkBar/>
       <AppButton downloadCv/>
     </>
   );
