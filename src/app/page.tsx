@@ -1,10 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import HomeBody from "@/components/HomeBody";
+import Section from "@/components/Section";
 
 export default function Home() {
   return (
-    <section className="w-full h-screen block md:flex justify-between container lg:px-28 pt-44 sm:pt-36 fadeIn">
+    <Section className="block md:flex justify-between">
       <div className="w-full md:max-w-[600px]">
         <HomeBody />
       </div>
@@ -17,6 +18,6 @@ export default function Home() {
           alt="My Image"
         />
       </div>
-    </section>
+    </Section>
   );
 }

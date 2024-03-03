@@ -29,6 +29,16 @@ export default function Typography({
       </h1>
     );
   }
+  if (variant === "h2") {
+    return (
+      <h2
+        className={clsx("text-2xl md:text-4xl font-semibold", className)}
+        style={style}
+      >
+        {children}
+      </h2>
+    );
+  }
   return (
     <p className={clsx(className)} style={style}>
       {children}
